@@ -71,8 +71,9 @@
         <div class="bg-custom p-4">
             <div class="row">
                 <div class="col">
-                    <form action="/employee" method="GET">
-                        <input type="search" name="search" class="form-control" placeholder="Search">
+                    <form action="/employee" method="GET" class="d-flex">
+                        <input type="search" name="search" class="form-control" style="margin-right: 15px !important" placeholder="Search">
+                        <button type="submit" class="btn btn-secondary">Search</button>
                     </form>
                 </div>
                 <div class="col">

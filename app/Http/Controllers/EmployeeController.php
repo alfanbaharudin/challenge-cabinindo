@@ -10,7 +10,7 @@ class EmployeeController extends Controller
     public function index(Request $request)
     {
         if ($request->has('search')) {
-            $data = Employee::where('name', 'LIKE', '%' . $request->search)->paginate(10);
+            $data = Employee::where('name', 'LIKE', '%' . $request->search . '%')->paginate(10);
         } else {
             $data = Employee::paginate(10);
         }
